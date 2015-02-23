@@ -1,0 +1,456 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\000034}}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000312}}
+body {
+  background-color: #f56f6c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000319}}
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000327}}
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  /* Make the masthead heading the same height as the navigation */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000331}}
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000340}}
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000346}}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000351}}
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000355}}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000362}}
+.marketing {
+  margin: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000365}}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000371}}
+#orbit {
+  stroke-dasharray: 460;
+  -webkit-animation: dash 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
+  animation: dash 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000376}}
+#orbit2 {
+  stroke-dasharray: 250;
+  -webkit-animation: dash2 1.2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, connect 1.2s linear infinite, opacity 1.2s ease-out infinite;
+  animation: dash2 1.2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, connect 1.2s linear infinite, opacity 1.2s ease-out infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000383}}
+#orbit3 {
+  stroke-dasharray: 200;
+  -webkit-animation: dash3 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
+  animation: dash3 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000389}}
+.hold_svg.triangular {
+  -webkit-animation: roll3 2s ease-in-out infinite;
+  animation: roll3 2s ease-in-out infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000392}}
+.hold_svg.squiggle {
+  -webkit-animation: roll 2s ease-in-out infinite;
+  animation: roll 2s ease-in-out infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000395}}
+.hold_svg.circular {
+  -webkit-animation: roll2 1.2s ease-in-out infinite;
+  animation: roll2 1.2s ease-in-out infinite;
+}
+
+@-webkit-keyframes dash2 {
+  0% {
+    stroke-dashoffset: 250;
+  }
+  10% {
+    stroke-dashoffset: 235;
+  }
+  45% {
+    stroke-dashoffset: 55;
+  }
+  55% {
+    stroke-dashoffset: -55;
+  }
+  90% {
+    stroke-dashoffset: -190;
+  }
+  100% {
+    stroke-dashoffset: -205;
+  }
+}
+
+@keyframes dash2 {
+  0% {
+    stroke-dashoffset: 250;
+  }
+  10% {
+    stroke-dashoffset: 235;
+  }
+  45% {
+    stroke-dashoffset: 55;
+  }
+  55% {
+    stroke-dashoffset: -55;
+  }
+  90% {
+    stroke-dashoffset: -190;
+  }
+  100% {
+    stroke-dashoffset: -205;
+  }
+}
+@-webkit-keyframes dash3 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  5% {
+    stroke-dashoffset: 180;
+  }
+  40% {
+    stroke-dashoffset: 30;
+  }
+  50% {
+    stroke-dashoffset: -30;
+  }
+  75% {
+    stroke-dashoffset: -180;
+  }
+  80% {
+    stroke-dashoffset: -200;
+  }
+}
+@keyframes dash3 {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  5% {
+    stroke-dashoffset: 180;
+  }
+  40% {
+    stroke-dashoffset: 30;
+  }
+  50% {
+    stroke-dashoffset: -30;
+  }
+  75% {
+    stroke-dashoffset: -180;
+  }
+  80% {
+    stroke-dashoffset: -200;
+  }
+}
+@-webkit-keyframes connect {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+  }
+}
+@keyframes connect {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 460;
+  }
+  43% {
+    stroke-dashoffset: 10;
+  }
+  57% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: -450;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 460;
+  }
+  43% {
+    stroke-dashoffset: 10;
+  }
+  57% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: -450;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  43% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  43% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  43% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  57% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes roll {
+  0% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  43% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  57% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes roll2 {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@keyframes roll2 {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@-webkit-keyframes roll3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+}
+@keyframes roll3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003226}}
+.button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003235}}
+.load {
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("../images/load.png");
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: center;
+  -webkit-animation-name: mymove;
+  animation-name: mymove;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.57, 0.1, 0.48, 0.9);
+  animation-timing-function: cubic-bezier(0.57, 0.1, 0.48, 0.9);
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003254}}
+.hold_svg {
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003262}}
+.hold_svg svg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003275}}
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003280}}
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003287}}
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003291}}
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
