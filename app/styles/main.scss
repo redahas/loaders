@@ -80,14 +80,14 @@ body {
 }
 
 // Triangular
-#orbit3{
-  stroke-dasharray: 200;
-  animation: dash3 2s cubic-bezier(.76,.97,.87,.92) infinite, opacity 2s ease-out infinite;
-}
+// #orbit3{
+//   stroke-dasharray: 200;
+//   animation: dash3 2s cubic-bezier(.76,.97,.87,.92) infinite, opacity 2s ease-out infinite;
+// }
 
 .hold_svg{
   &.triangular{
-    animation: roll3 2s ease-in-out infinite;
+    // animation: roll3 2s ease-in-out infinite;
   }
   &.squiggle{
     animation: roll 2s ease-in-out infinite;
@@ -265,6 +265,7 @@ body {
     width:100%;
     display: block;
     float:left;
+    overflow: visible;
   }
 }
 

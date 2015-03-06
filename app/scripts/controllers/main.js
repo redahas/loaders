@@ -16,6 +16,8 @@ angular.module('loadersApp')
     		$scope.loaderIndex = 2;
     	}else if($scope.loaderIndex == 2){
     		$scope.loaderIndex = 3;
+        }else if($scope.loaderIndex == 3){
+            $scope.loaderIndex = 4;
     	}else{
     		$scope.loaderIndex = 1;
     	}

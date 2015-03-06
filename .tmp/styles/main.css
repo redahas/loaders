@@ -86,18 +86,6 @@ body {
   animation: dash2 1.2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, connect 1.2s linear infinite, opacity 1.2s ease-out infinite;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000383}}
-#orbit3 {
-  stroke-dasharray: 200;
-  -webkit-animation: dash3 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
-  animation: dash3 2s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 2s ease-out infinite;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000389}}
-.hold_svg.triangular {
-  -webkit-animation: roll3 2s ease-in-out infinite;
-  animation: roll3 2s ease-in-out infinite;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\0000392}}
 .hold_svg.squiggle {
   -webkit-animation: roll 2s ease-in-out infinite;
@@ -424,17 +412,18 @@ body {
   width: 100%;
   display: block;
   float: left;
+  overflow: visible;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003276}}
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003281}}
   .header,
   .marketing,
   .footer {
@@ -443,13 +432,13 @@ body {
   }
 
   /* Space out the masthead */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003288}}
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sredahan\/Projects\/loader_git\/loaders\/app\/styles\/main\.scss}line{font-family:\00003292}}
   .jumbotron {
     border-bottom: 0;
   }
