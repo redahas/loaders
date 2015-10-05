@@ -1,6 +1,10 @@
 // bower:scss
 // endbower
 
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,6 +17,23 @@ body {
   background-color: #f56f6c;
   padding-top: 20px;
   padding-bottom: 20px;
+  &.slide_bg_1, &.slide_bg_2, &.slide_bg_3, &.slide_bg_4{
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+  }
+  &.slide_bg_1{
+    background-color: #f56f6c;
+  }
+  &.slide_bg_2{
+    background-color: #F5AE44;
+  }
+  &.slide_bg_3{
+    background-color: #69DBF5;
+  }
+  &.slide_bg_4{
+    background-color: #B3E47C;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -70,13 +91,13 @@ body {
 
 #orbit{
   stroke-dasharray: 460;
-  animation: dash 2s cubic-bezier(.76,.97,.87,.92) infinite, opacity 2s ease-out infinite;
+  animation: dash 3s cubic-bezier(.76,.97,.87,.92) infinite, opacity 3s ease-out infinite;
 }
 
 #orbit2{
   stroke-dasharray: 250;
   // stroke-dasharray: 290;
-  animation: dash2 1.2s cubic-bezier(.76,.97,.87,.92) infinite, connect 1.2s linear infinite, opacity 1.2s ease-out infinite;
+  animation: dash2 1.3s cubic-bezier(.76,.97,.87,.92) infinite, connect 1.3s linear infinite;
 }
 
 // Triangular
@@ -84,16 +105,70 @@ body {
 //   stroke-dasharray: 200;
 //   animation: dash3 2s cubic-bezier(.76,.97,.87,.92) infinite, opacity 2s ease-out infinite;
 // }
+.opacity_animation{
+  animation-direction: alternate;
+}
+
 
 .hold_svg{
   &.triangular{
     // animation: roll3 2s ease-in-out infinite;
   }
   &.squiggle{
-    animation: roll 2s ease-in-out infinite;
+    animation: roll 3s ease-in-out infinite;
   }
   &.circular{
-    animation: roll2 1.2s ease-in-out infinite;
+    animation: roll2 1.3s ease-in-out infinite;
+  }
+  &.line .ab_pos{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -5px;
+    left: -5px;
+    &.invert{
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+    }
+  }
+}
+
+.op_one{
+  animation: opacone 4s ease-in-out infinite; 
+}
+
+.op_two{
+  animation: opactwo 4s ease-in-out infinite; 
+}
+
+@keyframes opacone {
+  0% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes opactwo {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -223,6 +298,32 @@ body {
   }
 }
 
+.slide-map{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -72px;
+  .slide-indicator{
+    height: 12px;
+    width: 12px;
+    margin: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    opacity: 0.4;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    &.selected{
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+}
+
 .button{
   position: absolute;
   right: 10px;
@@ -230,6 +331,19 @@ body {
   padding: 10px 15px;
   border-radius: 4px;
   border: 1px solid black;
+}
+
+.footer{
+  padding: 0;
+  border: 0;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.6em;
+  a{
+    text-decoration: none;
+    color: #246a76;
+  }
 }
 
 .load{

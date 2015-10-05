@@ -11,6 +11,7 @@ angular.module('loadersApp')
     return {
       templateUrl: 'views/templates/triangular.html',
       restrict: 'E',
+      scope: { strk: '='},
       link: function postLink(scope, element, attrs) {
       }
     };

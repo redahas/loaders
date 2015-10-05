@@ -10,11 +10,12 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="loadersApp">
+  <body ng-app="loadersApp" ng-class="'slide_bg_' + $root.loaderIndex">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -22,6 +23,7 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+      <div class="footer"><a href="https://github.com/redahas/loaders">github.com/redahas/loaders</a></div>
     </div>
 
 

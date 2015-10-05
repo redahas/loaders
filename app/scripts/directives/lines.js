@@ -11,7 +11,9 @@ angular.module('loadersApp')
     return {
       templateUrl: 'views/templates/lines.html',
       restrict: 'E',
-      link: function postLink(scope, element) {
+      scope: {strk: '='},
+      link: function postLink(scope, element, attr) {
+
       }
     };
   });
