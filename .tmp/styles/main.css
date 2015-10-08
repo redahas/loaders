@@ -1,9 +1,9 @@
-/* line 4, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\000034}}
 * {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 8, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\000038}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,37 +12,101 @@
 }
 
 /* Space out content a bit */
-/* line 16, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000316}}
 body {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: #f56f6c;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 20, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000326}}
 body.slide_bg_1, body.slide_bg_2, body.slide_bg_3, body.slide_bg_4 {
-  transition: all 200ms ease-out;
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
 }
-/* line 25, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000331}}
 body.slide_bg_1 {
   background-color: #f56f6c;
 }
-/* line 28, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000334}}
 body.slide_bg_2 {
   background-color: #F5AE44;
 }
-/* line 31, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000337}}
 body.slide_bg_3 {
   background-color: #69DBF5;
 }
-/* line 34, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000340}}
 body.slide_bg_4 {
   background-color: #B3E47C;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000345}}
+.container {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000352}}
+.block {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000356}}
+.clearfix {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000360}}
+.title_text {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  right: 0;
+  left: 0;
+  height: 45px;
+  opacity: 0.6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000368}}
+.title_text .title_the {
+  opacity: 0.4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000371}}
+.title_text .actual_title {
+  position: absolute;
+  bottom: 0;
+  line-height: 20px;
+  font-size: 20px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transition: transform 100ms ease-out;
+  -webkit-transition: -webkit-transform 100ms ease-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000385}}
+.title_text .actual_title.selected {
+  opacity: 0.6;
+  transition: all 400ms ease-out 200ms;
+  -webkit-transition: all 400ms ease-out 200ms;
+  -moz-transition: all 400ms ease-out 200ms;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 40, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\0000398}}
 .header,
 .marketing,
 .footer {
@@ -51,12 +115,12 @@ body.slide_bg_4 {
 }
 
 /* Custom page header */
-/* line 48, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003106}}
 .header {
   border-bottom: 1px solid #e5e5e5;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 52, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003110}}
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -65,112 +129,126 @@ body.slide_bg_4 {
 }
 
 /* Custom page footer */
-/* line 61, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003119}}
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 67, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003125}}
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 72, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003130}}
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 76, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 83, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003141}}
 .marketing {
   margin: 40px 0;
 }
-/* line 86, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003144}}
 .marketing p + h4 {
   margin-top: 28px;
 }
 
-/* line 92, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003150}}
 #orbit {
-  stroke-dasharray: 460;
-  -webkit-animation: dash 3s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 3s ease-out infinite;
-  animation: dash 3s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, opacity 3s ease-out infinite;
+  stroke-dasharray: 350;
 }
 
-/* line 97, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003157}}
 #orbit2 {
   stroke-dasharray: 250;
-  -webkit-animation: dash2 1.3s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, connect 1.3s linear infinite;
-  animation: dash2 1.3s cubic-bezier(0.76, 0.97, 0.87, 0.92) infinite, connect 1.3s linear infinite;
 }
 
-/* line 108, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003176}}
 .opacity_animation {
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
 }
 
-/* line 117, ../../app/styles/main.scss */
-.hold_svg.squiggle {
-  -webkit-animation: roll 3s ease-in-out infinite;
-  animation: roll 3s ease-in-out infinite;
-}
-/* line 120, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003192}}
 .hold_svg.circular {
-  -webkit-animation: roll2 1.3s ease-in-out infinite;
-  animation: roll2 1.3s ease-in-out infinite;
+  animation: roll2 9.8s linear infinite;
+  -webkit-animation: roll2 9.8s linear infinite;
+  -moz-animation: roll2 9.8s linear infinite;
 }
-/* line 123, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003197}}
 .hold_svg.line .ab_pos {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -5px;
-  left: -5px;
+  right: 0;
+  left: 0;
 }
-/* line 129, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003203}}
 .hold_svg.line .ab_pos.invert {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
 }
 
-/* line 137, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003211}}
 .op_one {
-  -webkit-animation: opacone 4s ease-in-out infinite;
-  animation: opacone 4s ease-in-out infinite;
+  animation: opacone 6s ease-in-out infinite;
+  -webkit-animation: opacone 6s ease-in-out infinite;
+  -moz-animation: opacone 6s ease-in-out infinite;
 }
 
-/* line 141, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003217}}
 .op_two {
-  -webkit-animation: opactwo 4s ease-in-out infinite;
-  animation: opactwo 4s ease-in-out infinite;
+  animation: opactwo 6s ease-in-out infinite;
+  -webkit-animation: opactwo 6s ease-in-out infinite;
+  -moz-animation: opactwo 6s ease-in-out infinite;
 }
 
-@-webkit-keyframes opacone {
+@keyframes swing {
   0% {
-    opacity: 0.8;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 1;
+  10% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
   100% {
-    opacity: 0.8;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
-
+@-webkit-keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
 @keyframes opacone {
   0% {
     opacity: 0.8;
@@ -185,52 +263,46 @@ body.slide_bg_4 {
     opacity: 0.8;
   }
 }
-@-webkit-keyframes opactwo {
+@-webkit-keyframes opacone {
   0% {
+    opacity: 0.8;
+  }
+  45% {
     opacity: 1;
   }
-  35% {
-    opacity: 0.7;
-  }
-  65% {
-    opacity: 0.7;
+  55% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @keyframes opactwo {
   0% {
-    opacity: 1;
+    opacity: 0.7;
   }
   35% {
-    opacity: 0.7;
+    opacity: 0.9;
   }
   65% {
+    opacity: 0.9;
+  }
+  100% {
     opacity: 0.7;
   }
-  100% {
-    opacity: 1;
-  }
 }
-@-webkit-keyframes dash2 {
+@-webkit-keyframes opactwo {
   0% {
-    stroke-dashoffset: 250;
+    opacity: 0.7;
   }
-  10% {
-    stroke-dashoffset: 235;
+  35% {
+    opacity: 0.9;
   }
-  45% {
-    stroke-dashoffset: 55;
-  }
-  55% {
-    stroke-dashoffset: -55;
-  }
-  90% {
-    stroke-dashoffset: -190;
+  65% {
+    opacity: 0.9;
   }
   100% {
-    stroke-dashoffset: -205;
+    opacity: 0.7;
   }
 }
 @keyframes dash2 {
@@ -253,24 +325,24 @@ body.slide_bg_4 {
     stroke-dashoffset: -205;
   }
 }
-@-webkit-keyframes dash3 {
+@-webkit-keyframes dash2 {
   0% {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 250;
   }
-  5% {
-    stroke-dashoffset: 180;
+  10% {
+    stroke-dashoffset: 235;
   }
-  40% {
-    stroke-dashoffset: 30;
+  45% {
+    stroke-dashoffset: 55;
   }
-  50% {
-    stroke-dashoffset: -30;
+  55% {
+    stroke-dashoffset: -55;
   }
-  75% {
-    stroke-dashoffset: -180;
+  90% {
+    stroke-dashoffset: -190;
   }
-  80% {
-    stroke-dashoffset: -200;
+  100% {
+    stroke-dashoffset: -205;
   }
 }
 @keyframes dash3 {
@@ -293,77 +365,74 @@ body.slide_bg_4 {
     stroke-dashoffset: -200;
   }
 }
-@-webkit-keyframes connect {
+@-webkit-keyframes dash3 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    stroke-dashoffset: 200;
+  }
+  5% {
+    stroke-dashoffset: 180;
   }
   40% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    stroke-dashoffset: 30;
   }
-  100% {
-    -webkit-transform: rotate(65deg);
-    transform: rotate(65deg);
+  50% {
+    stroke-dashoffset: -30;
+  }
+  75% {
+    stroke-dashoffset: -180;
+  }
+  80% {
+    stroke-dashoffset: -200;
   }
 }
 @keyframes connect {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   40% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(65deg);
-    transform: rotate(65deg);
+    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
   }
 }
-@-webkit-keyframes dash {
+@-webkit-keyframes connect {
   0% {
-    stroke-dashoffset: 460;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
-  43% {
-    stroke-dashoffset: 10;
-  }
-  57% {
-    stroke-dashoffset: 10;
+  40% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    stroke-dashoffset: -450;
+    transform: rotate(65deg);
+    -webkit-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
   }
 }
 @keyframes dash {
-  0% {
-    stroke-dashoffset: 460;
+  from {
+    stroke-dashoffset: 0;
   }
-  43% {
-    stroke-dashoffset: 10;
-  }
-  57% {
-    stroke-dashoffset: 10;
-  }
-  100% {
-    stroke-dashoffset: -450;
+  to {
+    stroke-dashoffset: 700;
   }
 }
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0.5;
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: -900;
   }
-  25% {
-    opacity: 0.7;
-  }
-  43% {
-    opacity: 1;
-  }
-  57% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
+  to {
+    stroke-dashoffset: 0;
   }
 }
 @keyframes opacity {
@@ -383,111 +452,137 @@ body.slide_bg_4 {
     opacity: 0.5;
   }
 }
-@-webkit-keyframes roll {
+@-webkit-keyframes opacity {
   0% {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.7;
   }
   43% {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    opacity: 1;
   }
   57% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    opacity: 0.5;
   }
 }
 @keyframes roll {
   0% {
-    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
   }
   43% {
-    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
   }
   57% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
 }
-@-webkit-keyframes roll2 {
+@-webkit-keyframes roll {
   0% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
   }
-  50% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+  43% {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+  }
+  57% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
 }
 @keyframes roll2 {
   0% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-  50% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
-@-webkit-keyframes roll3 {
+@-webkit-keyframes roll2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-  }
-  90% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(120deg);
-    transform: rotate(120deg);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
 @keyframes roll3 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   90% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(120deg);
     transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
   }
 }
-/* line 301, ../../app/styles/main.scss */
+@-webkit-keyframes roll3 {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003590}}
 .slide-map {
   position: absolute;
   top: 80%;
   left: 50%;
-  margin-left: -72px;
+  margin-left: -104px;
 }
-/* line 306, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003599}}
 .slide-map .slide-indicator {
-  height: 12px;
-  width: 12px;
-  margin: 12px;
-  background-color: grey;
+  height: 22px;
+  width: 22px;
+  margin: 15px;
   border-radius: 50%;
   display: block;
   float: left;
@@ -495,16 +590,22 @@ body.slide_bg_4 {
   transition: all 200ms ease-in-out;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
+  transform-origin: 50% 100% 0;
+  -moz-transform-origin: 50% 100% 0;
+  -webkit-transform-origin: 50% 100% 0;
 }
-/* line 318, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003614}}
 .slide-map .slide-indicator.selected {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
   opacity: 1;
+  transition: all 300ms cubic-bezier(0.21, 0.62, 0.44, 1.33);
+  -webkit-transition: all 300ms cubic-bezier(0.21, 0.62, 0.44, 1.33);
+  -moz-transition: all 300ms cubic-bezier(0.21, 0.62, 0.44, 1.33);
 }
 
-/* line 327, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003635}}
 .button {
   position: absolute;
   right: 10px;
@@ -514,7 +615,7 @@ body.slide_bg_4 {
   border: 1px solid black;
 }
 
-/* line 336, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003644}}
 .footer {
   padding: 0;
   border: 0;
@@ -523,13 +624,13 @@ body.slide_bg_4 {
   left: 10px;
   font-size: 0.6em;
 }
-/* line 343, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003651}}
 .footer a {
   text-decoration: none;
   color: #246a76;
 }
 
-/* line 349, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003657}}
 .load {
   width: 120px;
   height: 120px;
@@ -554,17 +655,17 @@ body.slide_bg_4 {
   animation-iteration-count: infinite;
 }
 
-/* line 368, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003676}}
 .hold_svg {
   width: 120px;
   height: 120px;
   margin-left: -60px;
-  margin-top: -60px;
+  margin-top: -80px;
   position: absolute;
   left: 50%;
   top: 50%;
 }
-/* line 376, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003684}}
 .hold_svg svg {
   position: relative;
   height: 100%;
@@ -576,13 +677,13 @@ body.slide_bg_4 {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 390, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003698}}
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 395, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003703}}
   .header,
   .marketing,
   .footer {
@@ -591,13 +692,13 @@ body.slide_bg_4 {
   }
 
   /* Space out the masthead */
-  /* line 402, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003710}}
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 406, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/weasel88\/Projects\/loaders\/app\/styles\/main\.scss}line{font-family:\00003714}}
   .jumbotron {
     border-bottom: 0;
   }

@@ -11,6 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -21,8 +22,8 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    <div ng-controller="MainCtrl" class="container" hm-swipe-left="changeLoader(1)" hm-swipe-right="changeLoader(-1)">
+      <div ng-include="'views/main.html'"></div>
       <div class="footer"><a href="https://github.com/redahas/loaders">github.com/redahas/loaders</a></div>
     </div>
 
@@ -47,7 +48,13 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/hammerjs/hammer.js"></script>
+    <script src="bower_components/angular-gestures/gestures.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

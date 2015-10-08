@@ -11,16 +11,13 @@ angular.module('loadersApp')
   .controller('MainCtrl', function ($scope, $rootScope) {
     $rootScope.loaderIndex = 1;
 
-    $scope.changeLoader = function(){
-    	if($rootScope.loaderIndex == 1){
-    		$rootScope.loaderIndex = 2;
-    	}else if($rootScope.loaderIndex == 2){
-    		$rootScope.loaderIndex = 3;
-        }else if($rootScope.loaderIndex == 3){
-            $rootScope.loaderIndex = 4;
-    	}else{
-    		$rootScope.loaderIndex = 1;
-    	}
+    $scope.changeLoader = function(x){
+        console.log(x);
+        if(x > 0 && $rootScope.loaderIndex < 4){
+            $rootScope.loaderIndex++;
+        }else if(x < 1 && $rootScope.loaderIndex > 1){
+            $rootScope.loaderIndex--;
+        }
     };
 
     $scope.chooseSlide = function (x){

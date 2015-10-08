@@ -1,11 +1,39 @@
-<lines ng-if="$root.loaderIndex == 1" strk="'#246a76'"></lines>
+<squiggle ng-if="$root.loaderIndex == 1" strk="'#246a76'"></squiggle>
 <triangular ng-if="$root.loaderIndex == 2" strk="'#246a76'"></triangular>
-<circular ng-if="$root.loaderIndex == 3" strk="'#246a76'"></circular>
-<squiggle ng-if="$root.loaderIndex == 4" strk="'#246a76'"></squiggle>
+<lines ng-if="$root.loaderIndex == 3" strk="'#246a76'"></lines>
+<circular ng-if="$root.loaderIndex == 4" strk="'#246a76'"></circular>
+<div class="title_text text-center">
+	<span class="title_the text-uppercase clearfix block">The</span>
+	<span ng-class="{'selected': $root.loaderIndex == 1}" class="actual_title text-uppercase clearfix block">squiggle</span>
+	<span ng-class="{'selected': $root.loaderIndex == 2}" class="actual_title text-uppercase clearfix block">morph</span>
+	<span ng-class="{'selected': $root.loaderIndex == 3}" class="actual_title text-uppercase clearfix block">lines</span>
+	<span ng-class="{'selected': $root.loaderIndex == 4}" class="actual_title text-uppercase clearfix block">loop</span>
+</div>
 
-<div class="slide-map">
-	<div ng-class="{'selected': $root.loaderIndex == 1}" class="slide-indicator" ng-click="chooseSlide(1)"></div>
-	<div ng-class="{'selected': $root.loaderIndex == 2}" class="slide-indicator" ng-click="chooseSlide(2)"></div>
-	<div ng-class="{'selected': $root.loaderIndex == 3}" class="slide-indicator" ng-click="chooseSlide(3)"></div>
-	<div ng-class="{'selected': $root.loaderIndex == 4}" class="slide-indicator" ng-click="chooseSlide(4)"></div>
+
+<div class="slide-map" ng-class="'slide_current_' + $root.loaderIndex">
+	<!-- squiggle indicator -->
+	<div ng-class="{'selected': $root.loaderIndex == 1}" class="slide-indicator squiggle" ng-click="chooseSlide(1)">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+	    	<path fill="none" stroke="#246a76" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M90.6,10.1h-73c-4.4,0-8,4.4-8,9.9v0c0,5.5,3.6,9.9,8,9.9h65c4.4,0,8,4.4,8,9.9V40c0,5.5-3.6,9.9-8,9.9h-65c-4.4,0-8,4.4-8,9.9v0.3c0,5.5,3.6,9.9,8,9.9h65c4.4,0,8,4.4,8,9.9v0c0,5.5-3.6,9.9-8,9.9h-73"/>
+	    </svg>
+	</div>
+	<!-- triangular indicator -->
+	<div ng-class="{'selected': $root.loaderIndex == 2}" class="slide-indicator triangular" ng-click="chooseSlide(2)">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+		  <polygon points="0, 100  100, 100 50, 0" style="fill:#246a76;" />
+		</svg>
+	</div>
+	<!-- lines indicator -->
+	<div ng-class="{'selected': $root.loaderIndex == 3}" class="slide-indicator lines" ng-click="chooseSlide(3)">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+		  <rect width="100" height="100" style="fill:#246a76;" />
+		</svg>
+	</div>
+	<!-- circular indicator -->
+	<div ng-class="{'selected': $root.loaderIndex == 4}" class="slide-indicator circular" ng-click="chooseSlide(4)">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+		  <circle cx="50" cy="50" r="40" stroke="#246a76" fill="#246a76" stroke-width="19" />
+		</svg>
+	</div>
 </div>

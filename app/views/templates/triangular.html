@@ -1,19 +1,22 @@
-<div class="hold_svg triangular">
+<div class="hold_svg triangular" id="orbit3">
 	<svg viewbox="0 0 100 100">
         <path ng-attr-fill="{{strk}}">
         <animate 
                  attributeName="d" 
-                 dur="2000ms" 
+                 dur="2.2s" 
                  repeatCount="indefinite"
                  calcMode="spline" 
-                 keySplines=".71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12;
-                             .71,1.21,.74,1.12"
+                 keySplines=".75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1;
+                             .75,1.3,.74,1.1"
+
+                keyTimes="0; .14; .32; .44; .56; .68; .8; .92; 1"
+
                  values="M 50,0
                          C 77.6,0 100,22.4 100,50 
                          100,77.6 77.6,100 50,100
@@ -77,20 +80,30 @@
                          0,22.4, 22.4,0, 50,0
                          Z;"/>
 
-    <!-- 
+    
         <animate 
                  attributeName="fill"
-                 dur="2s" 
+                 dur="2.2s" 
                  repeatCount="indefinite"
                  calcMode="spline" 
-                 keySplines="1,0,1,0;
-                             1,0,1,0;
-                             1,0,1,0;"
+                 keySplines=".75,1.3,.9,1.1;
+                             .75,1.3,.9,1.1"
 
                  values="#2c3e50;
-                         #7f8c8d;
-                         #16a085;
-                         #2c3e50;"/> -->
+                         #246a76;
+                         #2c3e50"/>
+
+        <animateTransform
+                 attributeName="transform"
+                 dur="2.2s" 
+                 type="rotate"
+                 attributeType="XML"
+                 repeatCount="indefinite"
+                 calcMode="discreet" 
+                 keyTimes="0; .15; .25; .95; 1" 
+                 values="40 50 50; 40 50 50; 0 50 50; 0 50 50; 40 50 50" 
+                 begin="0ms"/>
+
         </path>
     </svg>
 </div>

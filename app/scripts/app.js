@@ -9,4 +9,12 @@
  * Main module of the application.
  */
 angular
-  .module('loadersApp', []);
+  .module('loadersApp', ['ui.bootstrap', 'angular-gestures'])
+  .config([ 'hammerDefaultOptsProvider', function (hammerDefaultOptsProvider) {
+  	hammerDefaultOptsProvider.set({
+		recognizers: [
+			[Hammer.Tap, {time: 250}],
+			[Hammer.Swipe, {time: 250}],
+		]
+	});
+  }]);
